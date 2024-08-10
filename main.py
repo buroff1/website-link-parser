@@ -40,6 +40,7 @@ class LinkParserApp:
         self.root = root  # Reference to the root window
         self.root.title("Website Link Parser")  # Set the title of the window
         self.root.geometry(CenterWindowToDisplay(root, width=400, height=200))  # Center the window on the screen
+        self.root.resizable(False, False)  # Make the window non-resizable
         self.root.iconbitmap("parsing.ico")  # Set the icon of the window
         ctk.set_appearance_mode("dark")  # Set theme to dark mode
         ctk.set_default_color_theme("blue")  # Set the default color theme to blue
